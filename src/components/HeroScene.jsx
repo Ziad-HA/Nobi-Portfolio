@@ -1,6 +1,6 @@
 
 import { useRef } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Float, Stars } from '@react-three/drei'
 import * as THREE from 'three'
 
@@ -32,6 +32,12 @@ function Orbit({ radius, tube, rotation, speed, color }) {
 function Core({ pointer }) {
   const group = useRef()
   const core = useRef()
+  const { size } = useThree()
+
+  const isMobile = size.width <= 860
+  // On mobile: push the 3D model lower down to clear the hero text & buttons
+  const position = isMobile ? [0.2, -1.5, -0.6] : [1.7, 0, -0.5]
+  const scale = isMobile ? 0.72 : 1.05
 
   useFrame((state) => {
     const t = state.clock.elapsedTime
@@ -53,7 +59,7 @@ function Core({ pointer }) {
 
   return (
     <Float speed={1.3} rotationIntensity={0.15} floatIntensity={0.3}>
-      <group ref={group} position={[1.7, 0, -0.5]} scale={1.05}>
+      <group ref={group} position={position} scale={scale}>
         {/* Main metallic sculpture */}
         <mesh ref={core}>
           <torusKnotGeometry args={[0.72, 0.23, 220, 32, 2, 5]} />

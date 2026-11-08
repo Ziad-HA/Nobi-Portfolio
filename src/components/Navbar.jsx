@@ -17,7 +17,7 @@ export default function Navbar() {
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
     >
       <a className="nav-logo" href="#top">
-        NOBI<span>'s</span> PORTFOLIO
+        NOBI<span>'S</span> PORTFOLIO
       </a>
 
       <nav>
