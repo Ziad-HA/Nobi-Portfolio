@@ -896,6 +896,36 @@ img {
 
 /* RESPONSIVE */
 @media (max-width: 860px) {
+  .hero {
+    min-height: auto !important;
+    min-height: unset !important;
+    padding-bottom: 24px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding-top: 85px;
+    padding-bottom: 12px;
+  }
+
+  .hero-copy {
+    padding-top: 0 !important;
+  }
+
+  .hero-meta {
+    position: static !important;
+    width: min(1120px, calc(100% - 32px));
+    margin: 14px auto 0 !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .section:first-of-type,
+  #about {
+    padding-top: 32px !important;
+  }
   .hero-content {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -936,9 +966,7 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 
-  .hero-copy {
-    padding-top: 18vh;
-  }
+  /* removed legacy hero-copy padding */
 
   .hero-meta {
     flex-direction: column;
@@ -1093,9 +1121,7 @@ section,
     display: none;
   }
 
-  .hero-copy {
-    padding-top: clamp(150px, 22vh, 210px);
-  }
+  /* removed legacy hero-copy padding */
 
   .hero h1 {
     font-size: clamp(48px, 10vw, 82px);
@@ -1143,6 +1169,38 @@ section,
 }
 
 @media (max-width: 540px) {
+  .hero {
+    min-height: auto !important;
+    min-height: unset !important;
+    padding-bottom: 16px;
+  }
+
+  .hero-content {
+    width: calc(100% - 32px);
+    padding-top: 75px;
+    gap: 18px;
+    padding-bottom: 8px;
+  }
+
+  .terminal-body {
+    padding: 12px 14px;
+    font-size: 11px;
+    line-height: 1.55;
+  }
+
+  .terminal-header {
+    padding: 9px 13px;
+  }
+
+  .terminal-footer {
+    padding: 8px 13px;
+    font-size: 10px;
+  }
+
+  .hero-meta {
+    margin-top: 10px !important;
+    font-size: 9px;
+  }
   .hero-content {
     width: calc(100% - 32px);
     padding-top: 125px;
@@ -1173,10 +1231,7 @@ section,
     bottom: -4px;
   }
 
-  .hero-copy {
-    width: calc(100% - 40px);
-    padding-top: 155px;
-  }
+  /* removed legacy hero-copy padding */
 
   .eyebrow,
   .kicker {
@@ -1345,9 +1400,7 @@ section,
     justify-content: space-between;
   }
 
-  .hero-copy {
-    padding-top: 175px;
-  }
+  /* removed legacy hero-copy padding */
 
   .hero h1 {
     font-size: clamp(38px, 11vw, 48px);
