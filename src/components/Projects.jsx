@@ -1,24 +1,45 @@
 
 import { motion } from 'framer-motion'
 
-const project = {
-  title: 'NOBI — Streetwear',
-  category: 'E-COMMERCE / WEB DEVELOPMENT',
-  description:
-    'A modern streetwear e-commerce experience built with React. Explore collections, browse products, discover the lookbook, and enjoy a smooth shopping experience.',
-  stack: [
-    'React',
-    'JavaScript',
-    'Supabase',
-    'React Router',
-    'Framer Motion',
-  ],
-  live: 'https://nobi-brand.vercel.app/',
-  repo: 'https://github.com/Ziad-HA/Nobi-Brand',
-  image: '/projects/nobi-preview.png',
-}
+const projects = [
+  {
+    number: '01',
+    title: 'NOBI — Streetwear',
+    category: 'E-COMMERCE / WEB DEVELOPMENT',
+    description:
+      'A modern streetwear e-commerce experience built with React. Explore collections, browse products, discover the lookbook, and enjoy a smooth shopping experience.',
+    stack: [
+      'React',
+      'JavaScript',
+      'Supabase',
+      'React Router',
+      'Framer Motion',
+    ],
+    live: 'https://nobi-brand.vercel.app/',
+    repo: 'https://github.com/Ziad-HA/Nobi-Brand',
+    image: '/projects/nobi-preview.png',
+    alt: 'NOBI Streetwear website preview',
+  },
+  {
+    number: '02',
+    title: 'NOBI — Coach',
+    category: 'ONLINE COACHING / WEB DEVELOPMENT',
+    description:
+      'An elite online coaching platform designed for champions. Features coaching packages, client results, feedback, FAQ, and a high-performance mindset experience.',
+    stack: [
+      'React',
+      'JavaScript',
+      'Framer Motion',
+      'Vite',
+    ],
+    live: 'https://nobi-coach.vercel.app/',
+    repo: 'https://github.com/Ziad-HA/Nobi-Coach',
+    image: '/projects/nobi-coach-preview.jpg',
+    alt: 'NOBI Coach website preview',
+  },
+]
 
-const emptyProjects = [2, 3, 4]
+const emptyProjects = [3, 4]
 
 export default function Projects() {
   return (
@@ -33,72 +54,75 @@ export default function Projects() {
       </div>
 
       <div className="project-grid">
-        <motion.article
-          className="project-card featured-project"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.7 }}
-          whileHover={{ y: -6 }}
-        >
-          <a
-            className="project-media"
-            href={project.live}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Open NOBI live website"
+        {projects.map((project, index) => (
+          <motion.article
+            key={project.number}
+            className="project-card featured-project"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ delay: index * 0.12, duration: 0.7 }}
+            whileHover={{ y: -6 }}
           >
-            <img
-              src={project.image}
-              alt="NOBI Streetwear website preview"
-              onError={(e) => {
-                console.error('NOBI preview image failed to load')
-                e.currentTarget.style.display = 'none'
-              }}
-            />
+            <a
+              className="project-media"
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Open ${project.title} live website`}
+            >
+              <img
+                src={project.image}
+                alt={project.alt}
+                onError={(e) => {
+                  console.error(`${project.title} preview image failed to load`)
+                  e.currentTarget.style.display = 'none'
+                }}
+              />
 
-            <div className="project-image-overlay">
-              <span>01 / FEATURED PROJECT</span>
-              <span>EXPLORE PROJECT ↗</span>
+              <div className="project-image-overlay">
+                <span>{project.number} / FEATURED PROJECT</span>
+                <span>EXPLORE PROJECT ↗</span>
+              </div>
+
+              <div className="project-scan" />
+            </a>
+
+            <div className="project-body">
+              <div className="project-top">
+                <span>{project.category}</span>
+                <span>{project.number} / 04</span>
+              </div>
+
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+
+              <ul className="tags">
+                {project.stack.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+
+              <div className="project-links">
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LIVE DEMO <span>↗</span>
+                </a>
+
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SOURCE CODE <span>↗</span>
+                </a>
+              </div>
             </div>
-
-            <div className="project-scan" />
-          </a>
-
-          <div className="project-body">
-            <div className="project-top">
-              <span>{project.category}</span>
-              <span>01 / 04</span>
-            </div>
-
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-
-            <ul className="tags">
-              {project.stack.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-
-            <div className="project-links">
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LIVE DEMO <span>↗</span>
-              </a>
-
-              <a
-                href={project.repo}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                SOURCE CODE <span>↗</span>
-              </a>
-            </div>
-          </div>
-        </motion.article>
+          </motion.article>
+        ))}
 
         {emptyProjects.map((number, index) => (
           <motion.article
@@ -108,7 +132,7 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{
-              delay: (index + 1) * 0.12,
+              delay: (projects.length + index) * 0.12,
               duration: 0.7,
             }}
           >
