@@ -74,7 +74,6 @@ export default function Skills() {
             <span className="service-number">{service.number}</span>
             <h3>{service.title}</h3>
             <p>{service.copy}</p>
-            <span className="service-arrow">↗</span>
           </motion.article>
         ))}
       </div>

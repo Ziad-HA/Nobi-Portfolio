@@ -625,15 +625,6 @@ img {
   max-width: 420px;
 }
 
-.service-arrow {
-  position: absolute;
-  right: 24px;
-  top: 24px;
-  color: var(--accent);
-  font-size: 20px;
-}
-
-
 /* PROJECTS */
 .project-grid {
   display: grid;
