@@ -1,4 +1,3 @@
-
 /**
  * MY PROJECTS
  * Add images inside public/projects/
@@ -6,12 +5,11 @@
 
 export const projects = [
   {
-    id: 'p1',
-    tag: '01 / E-COMMERCE',
+    number: '01',
     title: 'NOBI — Streetwear',
-    year: '2026',
+    category: 'E-COMMERCE / WEB DEVELOPMENT',
     description:
-      'A modern streetwear e-commerce website built with React, featuring product collections, shopping cart, authentication, and a smooth shopping experience.',
+      'A modern streetwear e-commerce experience built with React. Explore collections, browse products, discover the lookbook, and enjoy a smooth shopping experience.',
     stack: [
       'React',
       'JavaScript',
@@ -19,16 +17,15 @@ export const projects = [
       'React Router',
       'Framer Motion',
     ],
-    image: '/projects/nobi-preview.png',
     live: 'https://nobi-brand.vercel.app/',
     repo: 'https://github.com/Ziad-HA/Nobi-Brand',
-    accent: '#d98a4e',
+    image: '/projects/nobi-preview.png',
+    alt: 'NOBI Streetwear website preview',
   },
   {
-    id: 'p2',
-    tag: '02 / ONLINE COACHING',
+    number: '02',
     title: 'NOBI — Coach',
-    year: '2026',
+    category: 'ONLINE COACHING / WEB DEVELOPMENT',
     description:
       'An elite online coaching platform designed for champions. Features coaching packages, client results, feedback, FAQ, and a high-performance mindset experience.',
     stack: [
@@ -37,33 +34,9 @@ export const projects = [
       'Framer Motion',
       'Vite',
     ],
-    image: '/projects/nobi-coach-preview.jpg',
     live: 'https://nobi-coach.vercel.app/',
     repo: 'https://github.com/Ziad-HA/Nobi-Coach',
-    accent: '#e53e3e',
-  },
-  {
-    id: 'p3',
-    tag: '03 / UPCOMING',
-    title: 'Coming Soon',
-    year: '2026',
-    description: 'A new project is currently in development.',
-    stack: [],
-    image: '',
-    live: '#',
-    repo: '#',
-    accent: '#ff2d92',
-  },
-  {
-    id: 'p4',
-    tag: '04 / UPCOMING',
-    title: 'Coming Soon',
-    year: '2026',
-    description: 'Something new is in the works.',
-    stack: [],
-    image: '',
-    live: '#',
-    repo: '#',
-    accent: '#7c5cff',
+    image: '/projects/nobi-coach-preview.jpg',
+    alt: 'NOBI Coach website preview',
   },
 ]

@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react'
 
-export default function HeroScene({ pointer }) {
+export default function HeroScene() {
   const [mousePos, setMousePos] = useState({ x: 50, y: 35 })
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function HeroScene({ pointer }) {
       <div
         className="hero-spotlight"
         style={{
-          background: `radial-gradient(650px circle at ${mousePos.x}% ${mousePos.y}%, rgba(217, 138, 78, 0.12), transparent 60%)`,
+          background: `radial-gradient(650px circle at ${mousePos.x}% ${mousePos.y}%, rgba(91, 155, 213, 0.12), transparent 60%)`,
         }}
       />
 
