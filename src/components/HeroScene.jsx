@@ -24,7 +24,7 @@ export default function HeroScene() {
       <div
         className="hero-spotlight"
         style={{
-          background: `radial-gradient(650px circle at ${mousePos.x}% ${mousePos.y}%, rgba(91, 155, 213, 0.12), transparent 60%)`,
+          background: `radial-gradient(650px circle at ${mousePos.x}% ${mousePos.y}%, rgba(127, 176, 143, 0.12), transparent 60%)`,
         }}
       />
 
