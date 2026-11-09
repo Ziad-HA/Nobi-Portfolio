@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
 import { projects } from '../data/projects'
 
-const emptyProjects = [3, 4]
+const emptyProjects = [3]
+const totalProjects = projects.length + emptyProjects.length
 
 export default function Projects() {
   return (
@@ -36,6 +37,8 @@ export default function Projects() {
               <img
                 src={project.image}
                 alt={project.alt}
+                loading="lazy"
+                decoding="async"
                 onError={(e) => {
                   console.error(`${project.title} preview image failed to load`)
                   e.currentTarget.style.display = 'none'
@@ -53,7 +56,7 @@ export default function Projects() {
             <div className="project-body">
               <div className="project-top">
                 <span>{project.category}</span>
-                <span>{project.number} / 04</span>
+                <span>{project.number} / 0{totalProjects}</span>
               </div>
 
               <h3>{project.title}</h3>
@@ -109,7 +112,7 @@ export default function Projects() {
             <div className="project-body">
               <div className="project-top">
                 <span>PROJECT IN DEVELOPMENT</span>
-                <span>0{number} / 04</span>
+                <span>0{number} / 0{totalProjects}</span>
               </div>
 
               <h3>Something new.</h3>

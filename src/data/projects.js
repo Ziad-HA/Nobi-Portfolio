@@ -19,7 +19,7 @@ export const projects = [
     ],
     live: 'https://nobi-brand.vercel.app/',
     repo: 'https://github.com/Ziad-HA/Nobi-Brand',
-    image: '/projects/nobi-preview.png',
+    image: '/projects/nobi-preview.webp',
     alt: 'NOBI Streetwear website preview',
   },
   {

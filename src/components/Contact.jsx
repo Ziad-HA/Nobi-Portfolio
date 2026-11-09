@@ -20,8 +20,8 @@ export default function Contact() {
           on Instagram or drop an email.
         </p>
         <div className="contact-row">
-          <a className="btn-primary" href="mailto:zh.nobii@email.com">
-            zh.nobii@email.com
+          <a className="btn-primary" href="mailto:zh.nobii@gmail.com">
+            zh.nobii@gmail.com
           </a>
           <a
             className="btn-ghost"

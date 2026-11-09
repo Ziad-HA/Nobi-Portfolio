@@ -147,11 +147,13 @@ img {
   transition: width 0.25s ease;
 }
 
-.nav nav a:hover {
+.nav nav a:hover,
+.nav nav a.active {
   color: var(--ink);
 }
 
-.nav nav a:hover::after {
+.nav nav a:hover::after,
+.nav nav a.active::after {
   width: 100%;
 }
 
