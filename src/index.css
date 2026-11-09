@@ -5,8 +5,8 @@
   --bg-2: #101010;
   --ink: #f2f0eb;
   --muted: #a6a6a6;
-  --orange: #ff5a00;
-  --orange-light: #ff792e;
+  --orange: #d98a4e;
+  --orange-light: #e6a374;
   --line: rgba(242, 240, 235, 0.12);
   --font-display: 'Space Grotesk', sans-serif;
   --font-body: 'DM Sans', sans-serif;
@@ -75,14 +75,14 @@ img {
   height: 8px;
   margin: -4px 0 0 -4px;
   background: var(--orange);
-  box-shadow: 0 0 18px rgba(255, 90, 0, 0.7);
+  box-shadow: 0 0 18px rgba(217, 138, 78, 0.7);
 }
 
 .cursor-ring {
   width: 42px;
   height: 42px;
   margin: -21px 0 0 -21px;
-  border: 1px solid rgba(255, 90, 0, 0.55);
+  border: 1px solid rgba(217, 138, 78, 0.55);
 }
 
 
@@ -170,8 +170,8 @@ img {
   inset: 0;
   background:
     linear-gradient(180deg, rgba(5, 5, 5, 0.12), transparent 30%, rgba(5, 5, 5, 0.88)),
-    radial-gradient(circle at 20% 20%, rgba(255, 90, 0, 0.09), transparent 36%),
-    radial-gradient(circle at 80% 70%, rgba(255, 90, 0, 0.12), transparent 40%);
+    radial-gradient(circle at 20% 20%, rgba(217, 138, 78, 0.09), transparent 36%),
+    radial-gradient(circle at 80% 70%, rgba(217, 138, 78, 0.12), transparent 40%);
   pointer-events: none;
 }
 
@@ -213,7 +213,7 @@ img {
   height: 450px;
   right: 5%;
   top: 15%;
-  background: radial-gradient(circle, rgba(255, 90, 0, 0.13) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(217, 138, 78, 0.13) 0%, transparent 70%);
   animation: floatOrb 8s ease-in-out infinite alternate;
 }
 
@@ -253,11 +253,11 @@ img {
 .hero-terminal {
   position: relative;
   background: rgba(13, 13, 13, 0.82);
-  border: 1px solid rgba(255, 90, 0, 0.22);
+  border: 1px solid rgba(217, 138, 78, 0.22);
   border-radius: 14px;
   box-shadow: 
     0 24px 60px rgba(0, 0, 0, 0.65),
-    0 0 35px rgba(255, 90, 0, 0.08),
+    0 0 35px rgba(217, 138, 78, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -266,10 +266,10 @@ img {
 }
 
 .hero-terminal:hover {
-  border-color: rgba(255, 90, 0, 0.45);
+  border-color: rgba(217, 138, 78, 0.45);
   box-shadow: 
     0 28px 70px rgba(0, 0, 0, 0.75),
-    0 0 50px rgba(255, 90, 0, 0.16),
+    0 0 50px rgba(217, 138, 78, 0.16),
     inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
@@ -309,8 +309,8 @@ img {
   font-weight: 700;
   letter-spacing: 0.12em;
   color: var(--orange);
-  background: rgba(255, 90, 0, 0.12);
-  border: 1px solid rgba(255, 90, 0, 0.3);
+  background: rgba(217, 138, 78, 0.12);
+  border: 1px solid rgba(217, 138, 78, 0.3);
   padding: 2px 7px;
   border-radius: 4px;
 }
@@ -408,12 +408,12 @@ img {
 .btn-primary {
   background: var(--orange);
   color: #050505;
-  box-shadow: 0 0 24px rgba(255, 90, 0, 0.22);
+  box-shadow: 0 0 24px rgba(217, 138, 78, 0.22);
 }
 
 .btn-primary:hover {
   background: var(--orange-light);
-  box-shadow: 0 0 32px rgba(255, 90, 0, 0.4);
+  box-shadow: 0 0 32px rgba(217, 138, 78, 0.4);
 }
 
 .btn-ghost {
@@ -547,12 +547,6 @@ img {
   line-height: 1.55;
 }
 
-.about-arrow {
-  margin-left: auto;
-  color: var(--orange);
-  font-size: 20px;
-}
-
 /* SKILLS */
 .skill-grid {
   list-style: none;
@@ -575,8 +569,8 @@ img {
 }
 
 .skill-grid li:hover {
-  border-color: rgba(255, 90, 0, 0.6);
-  background: rgba(255, 90, 0, 0.045);
+  border-color: rgba(217, 138, 78, 0.6);
+  background: rgba(217, 138, 78, 0.045);
   transform: translateY(-4px);
 }
 
@@ -604,7 +598,7 @@ img {
 }
 
 .service-card:hover {
-  border-color: rgba(255, 90, 0, 0.55);
+  border-color: rgba(217, 138, 78, 0.55);
   transform: translateY(-4px);
 }
 
@@ -654,7 +648,7 @@ img {
 }
 
 .project-card:hover {
-  border-color: rgba(255, 90, 0, 0.55);
+  border-color: rgba(217, 138, 78, 0.55);
 }
 
 .project-media {
@@ -722,7 +716,7 @@ img {
   background: linear-gradient(
     180deg,
     transparent,
-    rgba(255, 90, 0, 0.14),
+    rgba(217, 138, 78, 0.14),
     transparent
   );
   transform: translateY(-100%);
@@ -733,7 +727,7 @@ img {
   display: grid;
   place-items: center;
   background:
-    linear-gradient(135deg, rgba(255, 90, 0, 0.1), rgba(255, 255, 255, 0.025)),
+    linear-gradient(135deg, rgba(217, 138, 78, 0.1), rgba(255, 255, 255, 0.025)),
     repeating-linear-gradient(
       -45deg,
       transparent,
@@ -830,7 +824,7 @@ img {
   padding: 64px 48px;
   border: 1px solid var(--line);
   background:
-    radial-gradient(circle at 10% 20%, rgba(255, 90, 0, 0.13), transparent 32%),
+    radial-gradient(circle at 10% 20%, rgba(217, 138, 78, 0.13), transparent 32%),
     radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.045), transparent 34%),
     #0b0b0b;
 }
@@ -867,10 +861,10 @@ img {
 /* ANIMATIONS */
 @keyframes orangeGlow {
   from {
-    filter: drop-shadow(0 0 0 rgba(255, 90, 0, 0));
+    filter: drop-shadow(0 0 0 rgba(217, 138, 78, 0));
   }
   to {
-    filter: drop-shadow(0 0 12px rgba(255, 90, 0, 0.25));
+    filter: drop-shadow(0 0 12px rgba(217, 138, 78, 0.25));
   }
 }
 

@@ -22,7 +22,7 @@ export const projects = [
     image: '/projects/nobi-preview.png',
     live: 'https://nobi-brand.vercel.app/',
     repo: 'https://github.com/Ziad-HA/Nobi-Brand',
-    accent: '#ff6b00',
+    accent: '#d98a4e',
   },
   {
     id: 'p2',
