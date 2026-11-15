@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { projects } from '../data/projects'
 
-const emptyProjects = [3]
+const emptyProjects = [4]
 const totalProjects = projects.length + emptyProjects.length
 
 export default function Projects() {

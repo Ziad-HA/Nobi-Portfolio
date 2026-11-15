@@ -39,4 +39,22 @@ export const projects = [
     image: '/projects/nobi-coach-preview.jpg',
     alt: 'NOBI Coach website preview',
   },
+  {
+    number: '03',
+    title: 'D4RK — Streetwear Accessories',
+    category: 'E-COMMERCE / WEB DEVELOPMENT',
+    description:
+      'A dark, bold streetwear accessories storefront made in Alexandria. Features a cinematic hero, shop with category filters and search, product pages, collections, a persistent cart, and an Egyptian checkout with cash on delivery.',
+    stack: [
+      'React',
+      'JavaScript',
+      'Tailwind CSS',
+      'React Router',
+      'Vite',
+    ],
+    live: 'https://d4rk.eu.org/',
+    repo: 'https://github.com/Ziad-HA/nobi-d4rk',
+    image: '/projects/d4rk-preview.webp',
+    alt: 'D4RK streetwear accessories website preview',
+  },
 ]
