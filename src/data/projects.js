@@ -24,23 +24,6 @@ export const projects = [
   },
   {
     number: '02',
-    title: 'NOBI — Coach',
-    category: 'ONLINE COACHING / WEB DEVELOPMENT',
-    description:
-      'An elite online coaching platform designed for champions. Features coaching packages, client results, feedback, FAQ, and a high-performance mindset experience.',
-    stack: [
-      'React',
-      'JavaScript',
-      'Framer Motion',
-      'Vite',
-    ],
-    live: 'https://nobi-coach.vercel.app/',
-    repo: 'https://github.com/Ziad-HA/Nobi-Coach',
-    image: '/projects/nobi-coach-preview.jpg',
-    alt: 'NOBI Coach website preview',
-  },
-  {
-    number: '03',
     title: 'D4RK — Streetwear Accessories',
     category: 'E-COMMERCE / WEB DEVELOPMENT',
     description:
@@ -56,5 +39,22 @@ export const projects = [
     repo: 'https://github.com/Ziad-HA/nobi-d4rk',
     image: '/projects/d4rk-preview.webp',
     alt: 'D4RK streetwear accessories website preview',
+  },
+  {
+    number: '03',
+    title: 'NOBI — Coach',
+    category: 'ONLINE COACHING / WEB DEVELOPMENT',
+    description:
+      'An elite online coaching platform designed for champions. Features coaching packages, client results, feedback, FAQ, and a high-performance mindset experience.',
+    stack: [
+      'React',
+      'JavaScript',
+      'Framer Motion',
+      'Vite',
+    ],
+    live: 'https://nobi-coach.vercel.app/',
+    repo: 'https://github.com/Ziad-HA/Nobi-Coach',
+    image: '/projects/nobi-coach-preview.jpg',
+    alt: 'NOBI Coach website preview',
   },
 ]
