@@ -36,6 +36,7 @@ export const projects = [
       'Vite',
     ],
     live: 'https://d4rk.eu.org/',
+    liveLabel: 'VISIT LIVE SITE',
     repo: 'https://github.com/Ziad-HA/nobi-d4rk',
     image: '/projects/d4rk-preview.webp',
     alt: 'D4RK streetwear accessories website preview',

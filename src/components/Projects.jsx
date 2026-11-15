@@ -74,7 +74,7 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  LIVE DEMO <span>↗</span>
+                  {project.liveLabel ?? 'LIVE DEMO'} <span>↗</span>
                 </a>
 
                 <a
