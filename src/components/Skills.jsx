@@ -1,5 +1,5 @@
 
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 
 const skills = [
   { name: 'React', level: 'Frontend' },
