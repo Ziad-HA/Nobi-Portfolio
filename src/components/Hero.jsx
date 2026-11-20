@@ -32,8 +32,8 @@ export default function Hero() {
             }}
           >
             NOBI<br />
-            <span className="glitch">CREATIVE</span><br />
-            WITH EDGE.
+            <span className="glitch">BUILDS</span><br />
+            THE WEB.
           </motion.h1>
 
           <motion.p
