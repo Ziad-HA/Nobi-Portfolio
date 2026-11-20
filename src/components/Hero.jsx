@@ -85,7 +85,7 @@ export default function Hero() {
                 <span className="syntax-keyword">const</span> <span className="syntax-def">developer</span> = &#123;{'\n'}
                 {'  '}<span className="syntax-prop">name</span>: <span className="syntax-str">'Ziad Hesham'</span>,{'\n'}
                 {'  '}<span className="syntax-prop">alias</span>: <span className="syntax-str">'NOBI'</span>,{'\n'}
-                {'  '}<span className="syntax-prop">role</span>: <span className="syntax-str">'Frontend Developer'</span>,{'\n'}
+                {'  '}<span className="syntax-prop">role</span>: <span className="syntax-str">'Web Developer &amp; UI/UX Designer'</span>,{'\n'}
                 {'  '}<span className="syntax-prop">core</span>: [<span className="syntax-str">'React'</span>, <span className="syntax-str">'JavaScript'</span>, <span className="syntax-str">'Modern UI'</span>],{'\n'}
                 {'  '}<span className="syntax-prop">mission</span>: <span className="syntax-str">'Building clean, high-performance web apps'</span>,{'\n'}
                 {'  '}<span className="syntax-prop">openForWork</span>: <span className="syntax-bool">true</span>{'\n'}

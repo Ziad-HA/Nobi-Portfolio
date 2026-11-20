@@ -4,8 +4,8 @@ import { motion } from 'motion/react'
 const highlights = [
   {
     number: '01',
-    title: 'Frontend Development',
-    description: 'Building responsive and interactive web experiences.',
+    title: 'Web Development',
+    description: 'Building responsive and interactive web experiences, front to back.',
   },
   {
     number: '02',

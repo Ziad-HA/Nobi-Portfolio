@@ -2,7 +2,7 @@
 import { motion } from 'motion/react'
 
 const skills = [
-  { name: 'React', level: 'Frontend' },
+  { name: 'React', level: 'Library' },
   { name: 'Next.js', level: 'Framework' },
   { name: 'JavaScript', level: 'Programming' },
   { name: 'HTML / CSS', level: 'Web Fundamentals' },
@@ -19,8 +19,8 @@ const skills = [
 const services = [
   {
     number: '01',
-    title: 'Frontend Development',
-    copy: 'Developing modern web interfaces with React, reusable components, and clean code.',
+    title: 'Web Development',
+    copy: 'Developing modern web apps with React, Node.js, Express and MongoDB, with reusable components and clean code.',
   },
   {
     number: '02',

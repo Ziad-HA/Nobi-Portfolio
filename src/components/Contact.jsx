@@ -17,7 +17,7 @@ export default function Contact() {
           something.
         </h2>
         <p>
-          Open for front-end work, Next.js sites, and freelance design. Reach me
+          Open for web development work, Next.js sites, and freelance design. Reach me
           on Instagram or drop an email.
         </p>
         <div className="contact-row">
