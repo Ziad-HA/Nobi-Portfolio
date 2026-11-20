@@ -20,6 +20,7 @@ const skills = [
   { name: 'UI / UX Design', level: 'Design', category: 'Design' },
   { name: 'Git / GitHub', level: 'Version Control', category: 'Tools' },
   { name: 'VS Code', level: 'Editor', category: 'Tools' },
+  { name: 'Postman', level: 'API Testing', category: 'Tools' },
   { name: 'Vercel', level: 'Deployment', category: 'Tools' },
 ]
 
