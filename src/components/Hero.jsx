@@ -22,19 +22,40 @@ export default function Hero() {
             Junior Software Developer
           </motion.p>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.25,
-              duration: 0.8,
-              ease: [0.22, 1, 0.36, 1],
-            }}
-          >
-            NOBI<br />
-            <span className="glitch">BUILDS</span><br />
-            THE WEB.
-          </motion.h1>
+          <h1 className="hero-title" aria-label="NOBI, Web Developer">
+            <span className="hero-name" aria-hidden="true">
+              {'NOBI'.split('').map((letter, i) => (
+                <span className="hero-letter" key={letter + i}>
+                  <motion.span
+                    initial={{ y: '110%' }}
+                    animate={{ y: 0 }}
+                    transition={{
+                      delay: 0.25 + i * 0.09,
+                      duration: 0.8,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                  >
+                    {letter}
+                  </motion.span>
+                </span>
+              ))}
+            </span>
+            <motion.span
+              className="hero-role-line"
+              aria-hidden="true"
+              initial={{ opacity: 0, x: -24 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.75, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <span className="outline">Web</span> Developer
+              <motion.i
+                className="hero-underline"
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ delay: 1.1, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+              />
+            </motion.span>
+          </h1>
 
           <motion.p
             className="lede"

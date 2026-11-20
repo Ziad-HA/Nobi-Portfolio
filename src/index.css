@@ -1562,3 +1562,69 @@ html {
     object-position: center top;
   }
 }
+
+/* HERO TITLE: big NOBI + outlined "Web" Developer */
+.hero h1.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  letter-spacing: normal;
+  line-height: 1;
+}
+
+.hero-name {
+  display: flex;
+  font-family: var(--font-display);
+  font-size: clamp(76px, 17vw, 210px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  color: var(--ink);
+}
+
+.hero-letter {
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 0.06em;
+}
+
+.hero-letter > span {
+  display: inline-block;
+}
+
+.hero-role-line {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+  font-family: var(--font-display);
+  font-size: clamp(28px, 5.4vw, 66px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--accent-light);
+}
+
+.hero-role-line .outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--accent);
+}
+
+.hero-underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  transform-origin: 0 50%;
+}
+
+@media (max-width: 540px) {
+  .hero h1.hero-title {
+    gap: 10px;
+  }
+
+  .hero-role-line .outline {
+    -webkit-text-stroke-width: 1px;
+  }
+}
