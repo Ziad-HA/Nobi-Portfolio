@@ -26,7 +26,7 @@ export const projects = [
     ],
     live: 'https://z-unseen.vercel.app/',
     repo: 'https://github.com/Ziad-HA/UNSEEN',
-    image: '/projects/nobi-preview.webp',
+    image: "/projects/unseen-preview.webp",
     alt: 'UNSEEN streetwear storefront preview',
   },
   {
