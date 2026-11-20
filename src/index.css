@@ -576,7 +576,6 @@ img {
 .skill-grid li:hover {
   border-color: rgba(127, 176, 143, 0.6);
   background: rgba(127, 176, 143, 0.045);
-  transform: translateY(-4px);
 }
 
 .skill-grid em {
@@ -1639,4 +1638,60 @@ html {
   .hero-role-line .outline {
     -webkit-text-stroke-width: 1px;
   }
+}
+
+/* skill category tabs */
+.skill-tabs {
+  display: flex;
+  gap: 10px;
+  margin-top: 36px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+
+.skill-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.skill-tabs button {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.skill-tabs button span {
+  font-size: 11px;
+  color: var(--accent);
+}
+
+.skill-tabs button:hover {
+  color: var(--ink);
+  border-color: rgba(127, 176, 143, 0.6);
+}
+
+.skill-tabs button.active {
+  color: #050505;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.skill-tabs button.active span {
+  color: #050505;
+}
+
+.skill-grid {
+  margin-top: 20px;
 }
