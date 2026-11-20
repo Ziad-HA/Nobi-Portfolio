@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { whatsappMessage, whatsappNumber } from '../data/contact'
 
 export default function Contact() {
   return (
@@ -20,7 +21,20 @@ export default function Contact() {
           on Instagram or drop an email.
         </p>
         <div className="contact-row">
-          <a className="btn-primary" href="mailto:zh.nobii@gmail.com">
+          {whatsappNumber && (
+            <a
+              className="btn-primary"
+              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              WhatsApp
+            </a>
+          )}
+          <a
+            className={whatsappNumber ? 'btn-ghost' : 'btn-primary'}
+            href="mailto:zh.nobii@gmail.com"
+          >
             zh.nobii@gmail.com
           </a>
           <a
