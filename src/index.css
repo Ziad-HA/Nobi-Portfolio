@@ -604,7 +604,6 @@ img {
 
 .service-card:hover {
   border-color: rgba(127, 176, 143, 0.55);
-  transform: translateY(-4px);
 }
 
 .service-number {
@@ -1407,6 +1406,68 @@ section,
 
   .skill-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 90;
+  transform-origin: 0 50%;
+  background: var(--accent);
+}
+
+/* skills marquee strip */
+.marquee {
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+  background: var(--bg-2);
+  padding: 18px 0;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 30s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-track span {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+  padding-right: 28px;
+  font-family: var(--font-display);
+  font-size: clamp(20px, 3vw, 34px);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+  transition: color 0.25s ease;
+}
+
+.marquee-track span:hover {
+  color: var(--accent-light);
+}
+
+.marquee-track i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+@keyframes marquee-scroll {
+  to {
+    transform: translateX(-50%);
   }
 }
 

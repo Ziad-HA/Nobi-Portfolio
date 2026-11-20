@@ -10,6 +10,10 @@ const skills = [
   { name: 'Figma', level: 'Design' },
   { name: 'Git / GitHub', level: 'Version Control' },
   { name: 'Three.js', level: '3D Web' },
+  { name: 'Node.js', level: 'Backend' },
+  { name: 'Express', level: 'Backend' },
+  { name: 'MongoDB', level: 'Database' },
+  { name: 'UI / UX Design', level: 'Design' },
 ]
 
 const services = [
@@ -50,10 +54,12 @@ export default function Skills() {
         {skills.map((skill, i) => (
           <motion.li
             key={skill.name}
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 24, scale: 0.94 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            whileHover={{ y: -6 }}
+            whileTap={{ scale: 0.97 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.06, duration: 0.5 }}
+            transition={{ delay: (i % 4) * 0.07, type: 'spring', stiffness: 220, damping: 20 }}
           >
             <span>{skill.name}</span>
             <em>{skill.level}</em>
@@ -68,8 +74,9 @@ export default function Skills() {
             className="service-card"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -6 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.08, duration: 0.6 }}
+            transition={{ delay: i * 0.08, type: 'spring', stiffness: 180, damping: 20 }}
           >
             <span className="service-number">{service.number}</span>
             <h3>{service.title}</h3>
