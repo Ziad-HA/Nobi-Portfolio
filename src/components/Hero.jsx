@@ -32,7 +32,7 @@ export default function Hero() {
             }}
           >
             NOBI<br />
-            <span className="glitch">FRONTEND</span><br />
+            <span className="glitch">CREATIVE</span><br />
             WITH EDGE.
           </motion.h1>
 
