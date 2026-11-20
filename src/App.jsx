@@ -1,7 +1,6 @@
 import Cursor from './components/Cursor'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Marquee from './components/Marquee'
 import ScrollProgress from './components/ScrollProgress'
 import About from './components/About'
 import Skills from './components/Skills'
@@ -16,7 +15,6 @@ export default function App() {
       <ScrollProgress />
       <Navbar />
       <Hero />
-      <Marquee />
       <About />
       <Skills />
       <Projects />
