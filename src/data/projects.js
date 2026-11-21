@@ -1,7 +1,3 @@
-/**
- * SELECTED WORK
- * Project previews live in public/projects/.
- */
 
 export const projects = [
   {
